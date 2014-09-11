@@ -339,22 +339,22 @@ bool EvalScript(vector<vector<unsigned char> >& stack, const CScript& script, co
                 return false;
 
             // The madness begins here :D
-            if (opcode == OP_CAT ||
-                opcode == OP_SUBSTR ||
-                opcode == OP_LEFT ||
-                opcode == OP_RIGHT ||
-                opcode == OP_INVERT ||
-                opcode == OP_AND ||
-                opcode == OP_OR ||
-                opcode == OP_XOR ||
-                opcode == OP_2MUL ||
-                opcode == OP_2DIV ||
-                opcode == OP_MUL ||
-                opcode == OP_DIV ||
-                opcode == OP_MOD ||
-                opcode == OP_LSHIFT ||
-                opcode == OP_RSHIFT)
-                return false; // Disabled opcodes.
+            // if (opcode == OP_CAT ||
+            //     opcode == OP_SUBSTR ||
+            //     opcode == OP_LEFT ||
+            //     opcode == OP_RIGHT ||
+            //     opcode == OP_INVERT ||
+            //     opcode == OP_AND ||
+            //     opcode == OP_OR ||
+            //     opcode == OP_XOR ||
+            //     opcode == OP_2MUL ||
+            //     opcode == OP_2DIV ||
+            //     opcode == OP_MUL ||
+            //     opcode == OP_DIV ||
+            //     opcode == OP_MOD ||
+            //     opcode == OP_LSHIFT ||
+            //     opcode == OP_RSHIFT)
+            //     return false; // Disabled opcodes.
 
             if (fExec && 0 <= opcode && opcode <= OP_PUSHDATA4)
                 stack.push_back(vchPushValue);
