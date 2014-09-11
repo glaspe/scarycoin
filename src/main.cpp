@@ -27,9 +27,9 @@
 using namespace std;
 using namespace boost;
 
-#if defined(NDEBUG)
-# error "Scarycoin cannot be compiled without assertions."
-#endif
+// #if defined(NDEBUG)
+// # error "Scarycoin cannot be compiled without assertions."
+// #endif
 
 //
 // Global state
